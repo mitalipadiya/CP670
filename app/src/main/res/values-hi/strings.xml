@@ -3,4 +3,11 @@
     <string name="app_name">Android Assignments</string>
     <string name="hello_message">Guten Tag!</string>
     <string name="button_text">I\'m a button</string>
+    <string name="text_login">Login hindi</string>
+    <string name="text_password">Password hindi</string>
+    <string name="text_login_name">Login name hindi</string>
+    <string name="radio_btn">RadioButton hindi</string>
+    <string name="check_box">CheckBox hindi</string>
+    <string name="text_switch">What does this do? Hindi</string>
+    <string name="text_camera">Camera hindi</string>
 </resources>
