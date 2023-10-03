@@ -17,12 +17,14 @@
         android:layout_height="wrap_content"
         android:text="@string/check_box"
         android:layout_columnWeight="1"
+        android:id="@+id/checkbox_btn"
         android:layout_gravity="fill"/>
     <Switch
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/text_switch"
         android:layout_columnWeight="1"
+        android:id="@+id/switch_btn"
         android:layout_gravity="fill"/>
 
     <ImageButton
@@ -31,5 +33,6 @@
         android:layout_columnWeight="1"
         android:layout_gravity="fill"
         android:contentDescription="@string/text_camera"
+        android:id="@+id/image_btn"
         android:src="@android:drawable/ic_menu_camera" />
 </GridLayout>

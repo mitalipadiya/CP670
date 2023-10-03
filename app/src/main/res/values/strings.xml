@@ -9,4 +9,9 @@
     <string name="check_box">CheckBox</string>
     <string name="text_switch">What does this do?</string>
     <string name="text_camera">Camera</string>
+    <string name="dialog_message">Do you want to finish the activity?</string>
+    <string name="dialog_title">Confirm Finish</string>
+    <string name="ok">Yes</string>
+    <string name="cancel">No</string>
+
 </resources>
