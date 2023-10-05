@@ -33,11 +33,11 @@ public class MainActivity extends AppCompatActivity {
         super.onActivityResult(requestCode, resultCode, data);
         if(requestCode == 10) {
             Log.i(ACTIVITY_NAME, "Returned to MainActivity.onActivityResult");
-        }
-        if(requestCode == Activity.RESULT_OK) {
-            String messagePassed = data.getStringExtra("Response");
-            Log.i("Message", messagePassed);
-            Toast.makeText(MainActivity.this, "ListItemsActivity passed: " + messagePassed, Toast.LENGTH_SHORT).show();
+            if(resultCode == RESULT_OK) {
+                String messagePassed = data.getStringExtra("Response");
+                Log.i("Message", messagePassed);
+                Toast.makeText(MainActivity.this, "ListItemsActivity passed: " + messagePassed, Toast.LENGTH_SHORT).show();
+            }
         }
     }
 

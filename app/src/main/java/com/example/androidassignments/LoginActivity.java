@@ -39,11 +39,11 @@ public class LoginActivity extends AppCompatActivity {
         String emailText = loginEmailEditText.getText().toString();
         String password =  passwordEditText.getText().toString();
         if (!Patterns.EMAIL_ADDRESS.matcher(emailText).matches()) {
-            Toast.makeText(this, "Invalid Email address", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.invalid_email, Toast.LENGTH_SHORT).show();
             return;
         }
         if(password.isEmpty()) {
-            Toast.makeText(this, "Password cannot be empty", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, R.string.password_empty, Toast.LENGTH_SHORT).show();
             return;
         }
         SharedPreferences.Editor editor = sharedPreferences.edit();

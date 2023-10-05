@@ -13,5 +13,10 @@
     <string name="dialog_title">Confirm Finish</string>
     <string name="ok">Yes</string>
     <string name="cancel">No</string>
-
+    <string name="switch_on">Switch is On</string>
+    <string name="switch_off">Switch is Off</string>
+    <string name="confirm_finish">Confirm Finish</string>
+    <string name="finish_ques">Do you want to finish the activity?</string>
+    <string name="invalid_email">Invalid Email address</string>
+    <string name="password_empty">Password cannot be empty</string>
 </resources>

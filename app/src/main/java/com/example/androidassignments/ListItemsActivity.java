@@ -47,7 +47,7 @@ public class ListItemsActivity extends AppCompatActivity {
                 if (isChecked) {
                     print("Switch is On");
                 } else {
-                    Toast.makeText(ListItemsActivity.this, "Switch is Off", Toast.LENGTH_LONG).show();
+                    Toast.makeText(ListItemsActivity.this, R.string.switch_off, Toast.LENGTH_LONG).show();
                 }
             }
         });
@@ -55,7 +55,6 @@ public class ListItemsActivity extends AppCompatActivity {
             @Override
             public void onCheckedChanged(CompoundButton compoundButton, boolean isChecked) {
                 if (isChecked) {
-                    // If the checkbox is checked, show a dialog box
                     showDialog();
                 }
             }
@@ -63,13 +62,13 @@ public class ListItemsActivity extends AppCompatActivity {
     }
     private void showDialog() {
         AlertDialog.Builder builder = new AlertDialog.Builder(ListItemsActivity.this);
-        builder.setTitle("Confirm Finish")
-                .setMessage("Do you want to finish the activity?")
+        builder.setTitle(R.string.confirm_finish)
+                .setMessage(R.string.finish_ques)
                 .setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 Intent resultIntent = new Intent();
                 resultIntent.putExtra("Response", "Here is my response");
-                setResult(Activity.RESULT_OK, resultIntent);
+                setResult(RESULT_OK, resultIntent);
                 finish();
             }
         })
@@ -77,10 +76,7 @@ public class ListItemsActivity extends AppCompatActivity {
                     public void onClick(DialogInterface dialog, int id) {
                         dialog.dismiss();
                     }
-                })
-                .show();
-
-        builder.show();
+                }).show();
     }
 
     public void imageClicked(View imageView) {

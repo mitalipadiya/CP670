@@ -14,4 +14,10 @@
     <string name="dialog_title">Hindi Confirm Finish</string>
     <string name="ok">Hindi Yes</string>
     <string name="cancel">Hindi No</string>
+    <string name="switch_on">Hindi Switch is On</string>
+    <string name="switch_off">Hindi Switch is Off</string>
+    <string name="confirm_finish">Hindi Confirm Finish</string>
+    <string name="finish_ques">Hindi Do you want to finish the activity?</string>
+    <string name="invalid_email">Hindi Invalid Email address</string>
+    <string name="password_empty">Hindi Password cannot be empty</string>
 </resources>
