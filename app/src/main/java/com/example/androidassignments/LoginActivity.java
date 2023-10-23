@@ -15,16 +15,20 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.androidassignments.utils.Helper;
+
 public class LoginActivity extends AppCompatActivity {
     public static final String ACTIVITY_NAME = "LoginActivity";
     EditText loginEmailEditText, passwordEditText;
     SharedPreferences sharedPreferences;
+    Helper helper;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         Log.i(ACTIVITY_NAME, "Returned to LoginActivity.onCreate");
         setContentView(R.layout.activity_login);
+        helper = new Helper();
 
         loginEmailEditText = findViewById(R.id.editTextTextEmailAddress);
         passwordEditText = findViewById(R.id.editTextTextPassword);
@@ -42,7 +46,7 @@ public class LoginActivity extends AppCompatActivity {
             Toast.makeText(this, R.string.invalid_email, Toast.LENGTH_SHORT).show();
             return;
         }
-        if(password.isEmpty()) {
+        if(!helper.isValidPassword(password)) {
             Toast.makeText(this, R.string.password_empty, Toast.LENGTH_SHORT).show();
             return;
         }

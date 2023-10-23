@@ -23,11 +23,21 @@
         android:layout_marginStart="154dp"
         android:layout_marginTop="450dp"
         android:layout_marginEnd="166dp"
+        android:onClick="onButtonClick"
         android:text="@string/button_text"
+        android:textColor="@color/white"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:textColor="@color/white"
-        android:onClick="onButtonClick"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:layout_width="129dp"
+        android:layout_height="53dp"
+        android:layout_marginTop="87dp"
+        android:onClick="onStartChat"
+        android:text="@string/start_chat"
+        android:id="@+id/start_chat"
+        app:layout_constraintEnd_toEndOf="@+id/main_btn"
+        app:layout_constraintTop_toTopOf="@+id/main_btn" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

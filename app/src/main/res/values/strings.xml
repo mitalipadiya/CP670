@@ -19,4 +19,7 @@
     <string name="finish_ques">Do you want to finish the activity?</string>
     <string name="invalid_email">Invalid Email address</string>
     <string name="password_empty">Password cannot be empty</string>
+    <string name="start_chat">Start Chat</string>
+    <string name="title_activity_chat_window">ChatWindow</string>
+    <string name="send">Send</string>
 </resources>

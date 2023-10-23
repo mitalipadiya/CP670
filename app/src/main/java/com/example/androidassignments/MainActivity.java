@@ -41,6 +41,12 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
+    public void onStartChat(View view) {
+        Log.i(ACTIVITY_NAME, "User clicked Start Chat");
+        Intent intent = new Intent(MainActivity.this, ChatWindow.class);
+        startActivity(intent);
+    }
+
     @Override
     protected void onResume() {
         super.onResume();

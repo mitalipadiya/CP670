@@ -1,0 +1,84 @@
+@startuml
+
+class MainActivity {
+  - mainBtn: Button
+
+  + onCreate(savedInstanceState: Bundle)
+  + onButtonClick(view: View)
+  + onActivityResult(requestCode: int, resultCode: int, data: Intent)
+  + onStartChat(view: View)
+  + onResume()
+  + onStart()
+  + onPause()
+  + onStop()
+  + onDestroy()
+  + onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle)
+  + onRestoreInstanceState(savedInstanceState: Bundle)
+}
+
+class Helper {
+  + isValidPassword(password: String): boolean
+}
+
+class LoginActivity {
+  - loginEmailEditText: EditText
+  - passwordEditText: EditText
+  - sharedPreferences: SharedPreferences
+  - helper: Helper
+
+  + onCreate(savedInstanceState: Bundle)
+  + onLoggedIn(view: View)
+  + onResume()
+  + onStart()
+  + onPause()
+  + onStop()
+  + onDestroy()
+  + onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle)
+  + onRestoreInstanceState(savedInstanceState: Bundle)
+}
+class ListItemsActivity {
+  - imageButton: ImageButton
+  - checkBox: CheckBox
+  - aSwitch: Switch
+
+  + onCreate(savedInstanceState: Bundle)
+  + showDialog()
+  + imageClicked(imageView: View)
+  + print(message: String)
+  + onActivityResult(requestCode: int, resultCode: int, data: Intent)
+  + onResume()
+  + onStart()
+  + onPause()
+  + onStop()
+  + onDestroy()
+  + onSaveInstanceState(outState: Bundle, outPersistentState: PersistableBundle)
+  + onRestoreInstanceState(savedInstanceState: Bundle)
+}
+
+class ChatWindow {
+  - listView: ListView
+  - messageEditText: EditText
+  - sendBtn: Button
+  - chatMessages: ArrayList<String>
+  - messageAdapter: ChatAdapter
+
+  + onCreate(savedInstanceState: Bundle)
+  + onSendClick(view: View)
+}
+
+class ChatAdapter {
+  - context: Context
+
+  + getCount(): int
+  + getItem(position: int): String
+  + getView(position: int, convertView: View, parent: ViewGroup): View
+}
+
+ChatWindow -- ChatAdapter
+LoginActivity --|> AppCompatActivity
+ListItemsActivity --|> AppCompatActivity
+ChatWindow --|> AppCompatActivity
+MainActivity --|> AppCompatActivity
+LoginActivity -- Helper
+
+@enduml
