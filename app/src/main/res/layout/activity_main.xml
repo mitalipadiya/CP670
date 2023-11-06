@@ -40,4 +40,17 @@
         app:layout_constraintEnd_toEndOf="@+id/main_btn"
         app:layout_constraintTop_toTopOf="@+id/main_btn" />
 
+    <Button
+        android:id="@+id/testToolbar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Test Toolbar"
+        style="@style/CustomMenuIconStyle"
+        android:onClick="onStartToolbar"
+        app:layout_constraintEnd_toEndOf="@+id/start_chat"
+        app:layout_constraintHorizontal_bias="0.578"
+        app:layout_constraintStart_toStartOf="@+id/start_chat"
+        app:layout_constraintTop_toBottomOf="@+id/start_chat" />
+
 </androidx.constraintlayout.widget.ConstraintLayout>
