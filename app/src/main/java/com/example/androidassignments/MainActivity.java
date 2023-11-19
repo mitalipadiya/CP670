@@ -52,6 +52,10 @@ public class MainActivity extends AppCompatActivity {
         Intent intent = new Intent(MainActivity.this, TestToolbar.class);
         startActivity(intent);
     }
+    public void onWeatherForecast(View view) {
+        Intent intent = new Intent(MainActivity.this, WeatherForecastActivity.class);
+        startActivity(intent);
+    }
 
     @Override
     protected void onResume() {

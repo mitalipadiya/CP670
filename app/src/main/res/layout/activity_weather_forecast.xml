@@ -1,0 +1,52 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp">
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:id="@+id/citySpinner"/>
+
+    <ImageView
+        android:id="@+id/imageViewWeather"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:scaleType="centerCrop"
+        android:layout_centerHorizontal="true"/>
+
+    <TextView
+        android:id="@+id/textViewCurrentTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/imageViewWeather"
+        android:layout_marginTop="16dp"
+        android:text="Current Temp: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textViewMinTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewCurrentTemp"
+        android:layout_marginTop="8dp"
+        android:text="Min Temp: "
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/textViewMaxTemp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMinTemp"
+        android:layout_marginTop="8dp"
+        android:text="Max Temp: "
+        android:textSize="18sp"/>
+
+    <ProgressBar
+        android:id="@+id/progressBar"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/textViewMaxTemp"
+        android:layout_marginTop="16dp"
+        android:visibility="invisible"/>
+</RelativeLayout>

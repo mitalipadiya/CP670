@@ -5,6 +5,7 @@
     <uses-feature
         android:name="android.hardware.camera"
         android:required="true" />
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -17,6 +18,9 @@
         android:theme="@style/Theme.AndroidAssignments"
         tools:targetApi="31">
         <activity
+            android:name=".WeatherForecastActivity"
+            android:exported="false" />
+        <activity
             android:name=".TestToolbar"
             android:exported="false"
             android:label="@string/title_activity_test_toolbar"
@@ -25,7 +29,7 @@
             android:name=".ChatWindow"
             android:exported="false"
             android:label="@string/title_activity_chat_window"
-            android:parentActivityName=".MainActivity"/>
+            android:parentActivityName=".MainActivity" />
         <activity
             android:name=".ListItemsActivity"
             android:exported="false"

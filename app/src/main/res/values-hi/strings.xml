@@ -71,6 +71,8 @@
     <string name="settings">Hindi Settings</string>
     <string name="about">Hindi About</string>
     <string name="go_back">Hindi Do you want to go back?</string>
+    <string name="weather_forecast">Hindi Weather Forecast</string>
+
 
 
 </resources>
